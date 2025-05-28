@@ -1,7 +1,12 @@
+import Home from "./components/Home";
+import AppRouter from "./routes/AppRouter";
+
 const App = () => {
   return (
-    <div className="">App</div>
-  )
-}
+    <AppRouter>
+      <Home />
+    </AppRouter>
+  );
+};
 
-export default App
+export default App;
