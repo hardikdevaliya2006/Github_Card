@@ -1,6 +1,6 @@
-# 🌟 GitHub Card – React App
+# 🌟 GitHub Profile Card – React App
 
-A sleek and responsive React-based GitHub Profile Card App that lets you search for any GitHub user and see their public profile details. Built with modern technologies like React 19, Tailwind CSS 4, Axios, and Vite, this project is lightning fast and beautifully styled.
+A sleek and responsive GitHub Profile Card app built with **React 19**, **Tailwind CSS 4**, **Axios**, and **Vite 6**. Search any GitHub user and view their public profile details in a beautifully styled UI. Bonus: Export the card as a PDF!
 
 ![GitHub Card Screenshot](https://github.com/hardikdevaliya2006/Github_Card/assets/preview.png)
 
@@ -8,39 +8,38 @@ A sleek and responsive React-based GitHub Profile Card App that lets you search 
 
 ## 🚀 Live Demo
 
-Check it out here: [Live Demo](https://your-live-link.vercel.app)  
-*(replace with actual deployed link)*
+👉 [Check it out here](https://githubprofilecardgenerator.vercel.app/)
 
 ---
 
 ## 📦 Tech Stack
 
-| Tech           | Usage                                   |
-|----------------|-----------------------------------------|
-| React 19       | Frontend framework                      |
-| Tailwind CSS 4 | Styling and responsive layout           |
-| Axios          | Fetch GitHub API data                   |
-| Vite 6         | Super-fast bundler and dev server       |
-| React Router 7 | Client-side routing (if applicable)     |
-| HTML2PDF + jsPDF | Export profile card as PDF (bonus!)   |
+| Tech             | Description                            |
+|------------------|----------------------------------------|
+| React 19         | Frontend framework                     |
+| Tailwind CSS 4   | Styling and responsive layout          |
+| Axios            | Fetch data from GitHub API             |
+| Vite 6           | Fast build tool and dev server         |
+| React Router 7   | Client-side routing (optional)         |
+| html2canvas + jsPDF | Export card as PDF (bonus feature)  |
 
 ---
 
 ## 🔧 Features
 
 - 🔍 Search GitHub users by username
-- 📄 View profile info: avatar, bio, location, followers, etc.
-- 📜 Clean and responsive UI using Tailwind CSS
-- 📥 Download profile card as a PDF
-- ⚡ Super fast loading with Vite
-- 🔄 Realtime updates and error handling
+- 🧾 View profile info (avatar, name, bio, location, repos, followers, etc.)
+- 📱 Fully responsive UI
+- 🖨️ Export profile card to PDF
+- ⚡ Super-fast loading with Vite
+- 🚫 Error handling for invalid users or network issues
 
 ---
 
 ## 🖥️ Installation & Setup
 
-\`\`\`bash
-# Clone the repo
+```bash
+# Clone the repository
 git clone https://github.com/hardikdevaliya2006/Github_Card.git
 cd Github_Card
 
@@ -49,101 +48,105 @@ npm install
 
 # Start development server
 npm run dev
-\`\`\`
 
----
+# 📁 Folder Structure
 
-## 📁 Folder Structure
-
-\`\`\`
 Github_Card/
 ├── public/
 ├── src/
-│   ├── components/
-│   │   └── GitHubCard.jsx
-│   ├── assets/
-│   ├── App.jsx
-│   └── main.jsx
+│ ├── components/
+│ │ └── GitHubCard.jsx
+│ ├── assets/
+│ ├── App.jsx
+│ └── main.jsx
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
-\`\`\`
+
+yaml
+Copy
+Edit
 
 ---
 
-## 🌐 API Reference
+# 🌐 API Reference
 
-This app uses the official GitHub API to fetch user data:
+Using the GitHub REST API:
 
-\`\`\`bash
 GET https://api.github.com/users/{username}
-\`\`\`
 
-Returned data includes:
+yaml
+Copy
+Edit
 
-- Avatar
-- Username
-- Name
-- Bio
-- Location
-- Followers / Following
-- Public Repositories
+**Returns:**
 
----
-
-## 🖨️ Bonus: Export to PDF
-
-This project uses \`html2canvas\` + \`jsPDF\` to export the profile card as a downloadable PDF. Click the "Download PDF" button to save the card!
+- `avatar_url`
+- `login`, `name`
+- `bio`, `location`
+- `followers`, `following`
+- `public_repos`, etc.
 
 ---
 
-## 📸 Screenshots
+# 🖨️ Export to PDF
 
-<img src="https://github.com/hardikdevaliya2006/Github_Card/assets/preview1.png" width="100%" />
+This app uses `html2canvas` + `jsPDF` to let users download the GitHub card as a PDF.  
+Click the **"Download PDF"** button to save the snapshot.
+
+---
+
+# 📸 Screenshots
+
+<img src="https://github.com/hardikdevaliya2006/Github_Card/assets/preview1.png" width="100%" />  
 <img src="https://github.com/hardikdevaliya2006/Github_Card/assets/preview2.png" width="100%" />
 
 ---
 
-## 🧠 Learning Goals
+# 🧠 Learning Goals
 
-- Practice using the GitHub API
-- Style efficiently with Tailwind CSS 4
+- Learn to use the GitHub API
+- Practice styling with Tailwind CSS
 - Work with modern React (v19+)
-- Learn PDF generation in web apps
-- Practice clean folder structure and component-based design
+- Implement PDF generation in web apps
+- Build modular and clean component structure
 
 ---
 
-## 🤝 Contributing
+# 🤝 Contributing
 
-Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+Contributions are welcome!
 
-\`\`\`bash
-# Fork it
-# Create your feature branch
-git checkout -b feature/new-feature
-# Commit your changes
-git commit -m 'Add new feature'
-# Push to the branch
-git push origin feature/new-feature
-# Open a Pull Request
-\`\`\`
+```bash
+# Fork the repo
+# Create a feature branch
+git checkout -b feature/your-feature-name
+
+# Make your changes and commit
+git commit -m "Add your message here"
+
+# Push and open a PR
+git push origin feature/your-feature-name
+🧑‍💻 Author
+Made with ❤️ by Hardik Devaliya
+
+📄 License
+This project is licensed under the MIT License.
+See the LICENSE file for details.
+
+📌 Tags
+react tailwindcss github-api vite axios responsive profile-card pdf-generator
+
+yaml
+Copy
+Edit
 
 ---
 
-## 🧑‍💻 Author
+### ✅ To Use It:
 
-Made with ❤️ by [Hardik Devaliya](https://github.com/hardikdevaliya2006)
+1. Create a file named `README.md` in your project root (if it doesn’t exist).
+2. Copy and paste the above content into it.
+3. Commit and push it to GitHub.
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License.  
-See the [LICENSE](LICENSE) file for details.
-
----
-
-## 📌 Tags
-
-\`react\` \`tailwindcss\` \`github-api\` \`vite\` \`axios\` \`responsive\` \`profile-card\` \`pdf-generator\`
+Let me know if you want the full README combined from your first post with this — I can deliver the enti
