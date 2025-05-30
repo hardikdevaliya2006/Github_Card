@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 @theme {
   --color-main: #fff;
   --color-secondary: #f9f9f9;
@@ -13,4 +7,13 @@ body {
   --color-main-border: #e9e9e9;
   --color-button-bg: #228234;
   --color-button-hover-bg: #29903b;
+  --color-secondary: #818181;
+}
+
+.noScrollBar::-webkit-scrollbar {
+  display: none;
+}
+.noScrollBar {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
 }

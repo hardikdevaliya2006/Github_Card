@@ -1,15 +1,10 @@
 @import "tailwindcss";
 
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-@theme { 
+@theme {
   --color-main: #fff;
   --color-secondary: #f9f9f9;
   --color-black: #000;
   --color-main-border: #e9e9e9;
   --color-button-bg: #228234;
+  --color-font-secondary: #818181;
 }

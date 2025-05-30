@@ -1,14 +1,37 @@
-import { useContext } from "react";
-import { UserContext } from "../Context/GithubApiContext";
+import { useContext, useEffect } from "react";
+import { InputDataContext } from "../Context/InputDataContext";
+import { EmojiApiContext } from "../Context/EmojiApiContext";
+import { useNavigate } from "react-router";
 
 const isValidHex = (hex) => /^#([0-9A-F]{6})$/i.test(hex);
 
 const UserNameInput = () => {
-  const { userName, setUserName, themeColor, setThemeColor } =
-    useContext(UserContext);
+  const navigate = useNavigate();
+  const {
+    userName,
+    setUserName,
+    themeColor,
+    setThemeColor,
+    selectedEmoji,
+    setEmoji,
+  } = useContext(InputDataContext);
+  const { fetchEmoji, emoji, emojiLoading } = useContext(EmojiApiContext);
+
+  useEffect(() => {
+    fetchEmoji();
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (selectedEmoji == "") {
+      alert("Select Emoji");
+      return;
+    }
+    if (!userName.trim()) {
+      alert("Username cannot be empty");
+      return;
+    }
+    navigate(`/User/${userName}`);
     console.log("Submitted:", userName, themeColor);
   };
 
@@ -69,15 +92,36 @@ const UserNameInput = () => {
         </div>
       </div>
 
-      <div className="textInfo w-full flex flex-col items-start justify-center gap-1">
+      <div className="textInfo w-fit flex flex-col items-start justify-center gap-1">
         <label htmlFor="templateColor" className="text-sm font-semibold">
           Select Emoji
         </label>
-        <div className="w-full flex flex-col items-start gap-1">
-          
-        </div>
-      </div>
 
+        <ul className="w-fit noScrollBar items-center justify-center flex flex-wrap gap-2 p-1 max-h-60 overflow-y-auto bg-white rounded-md">
+          {emojiLoading
+            ? Array.from({ length: 100 }).map((_, index) => (
+                <li
+                  key={index}
+                  className="p-1 cursor-pointer border bg-secondary rounded-md border-main-border animate-pulse w-10 h-10"
+                >
+                  {""}
+                </li>
+              ))
+            : emoji.map((em) => (
+                <li
+                  key={em.slug}
+                  className={`text-2xl p-1 cursor-pointer rounded-md border transition-all duration-300 ${
+                    selectedEmoji === em.character
+                      ? "bg-green-200 border-green-700"
+                      : "bg-secondary border-main-border"
+                  }`}
+                  onClick={() => setEmoji(em.character)}
+                >
+                  {em.character}
+                </li>
+              ))}
+        </ul>
+      </div>
       <button
         className="submitButton hover:bg-button-hover-bg transition-colors duration-300 bg-button-bg cursor-pointer rounded-md text-white font-semibold px-2.5 py-1.5 text-[1rem]"
         type="submit"
