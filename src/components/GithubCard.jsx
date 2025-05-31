@@ -21,7 +21,7 @@ const GithubCard = () => {
       >
         <div className="absolute left-6 sm:translate-y-[42%] translate-y-[40%] md:translate-y-[36%] flex items-end justify-center gap-4 z-10">
           <img
-            src={`https://avatars.githubusercontent.com/u/153295156?v=4`}
+            src={userData.avatar_url}
             alt="profile"
             className="md:w-22 sm:h-20 sm:w-20 h-18 shadow-sm md:h-22 w-18 object-cover rounded-xl border-2"
             style={{ borderColor: themeColor }}
