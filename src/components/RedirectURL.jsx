@@ -17,6 +17,7 @@ const RedirectURL = () => {
   };
 
   const handleDownloadImage = () => {
+    alert("If Image Is not Work Then Take ScreenShot")
     const input = document.getElementById("githubCard");
     if (!input) return;
 
