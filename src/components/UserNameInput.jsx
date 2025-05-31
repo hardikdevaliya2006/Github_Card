@@ -56,6 +56,7 @@ const UserNameInput = () => {
         </label>
         <input
           type="text"
+          autoFocus
           id="username"
           required
           autoComplete="off"

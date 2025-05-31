@@ -68,8 +68,8 @@ const RedirectURL = () => {
   };
 
   return (
-    <div className="flex items-center justify-between w-full sm:max-w-md max-w-sm md:max-w-lg sm:mx-auto gap-3">
-      <div className="link min-w-[70%] flex overflow-hidden items-center justify-between gap-2 bg-secondary rounded-xl">
+    <div className="flex items-center justify-between w-full sm:max-w-md max-w-sm md:max-w-lg sm:mx-auto gap-2">
+      <div className="link min-w-[80%] md:min-w-[90%] flex overflow-hidden items-center justify-between gap-2 bg-secondary rounded-xl">
         <div className="linkWrap p-3 text-gray-600 font-semibold truncate">
           <p>{window.location.href}</p>
         </div>

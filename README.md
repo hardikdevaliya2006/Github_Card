@@ -2,7 +2,7 @@
 
 A sleek and responsive GitHub Profile Card app built with **React 19**, **Tailwind CSS 4**, **Axios**, and **Vite 6**. Search any GitHub user and view their public profile details in a beautifully styled UI. Bonus: Export the card as a PDF!
 
-![GitHub Card Screenshot](https://github.com/hardikdevaliya2006/Github_Card/assets/preview.png)
+![GitHub Card Screenshot](https://github.com/hardikdevaliya2006/Github_Card/src/assets/preview.png)
 
 ---
 
@@ -48,36 +48,33 @@ npm install
 
 # Start development server
 npm run dev
+```
 
-# 📁 Folder Structure
+### 📁 Folder Structure
 
+```
 Github_Card/
 ├── public/
 ├── src/
-│ ├── components/
-│ │ └── GitHubCard.jsx
-│ ├── assets/
-│ ├── App.jsx
-│ └── main.jsx
+│   ├── components/
+│   │   └── GitHubCard.jsx
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
-
-yaml
-Copy
-Edit
+```
 
 ---
 
-# 🌐 API Reference
+## 🌐 API Reference
 
 Using the GitHub REST API:
 
+```
 GET https://api.github.com/users/{username}
-
-yaml
-Copy
-Edit
+```
 
 **Returns:**
 
@@ -89,21 +86,21 @@ Edit
 
 ---
 
-# 🖨️ Export to PDF
+## 🖨️ Export to PDF
 
 This app uses `html2canvas` + `jsPDF` to let users download the GitHub card as a PDF.  
 Click the **"Download PDF"** button to save the snapshot.
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
-<img src="https://github.com/hardikdevaliya2006/Github_Card/assets/preview1.png" width="100%" />  
-<img src="https://github.com/hardikdevaliya2006/Github_Card/assets/preview2.png" width="100%" />
+<img src="https://github.com/hardikdevaliya2006/Github_Card/src/assets/preview1.png" width="100%" />
+<img src="https://github.com/hardikdevaliya2006/Github_Card/src/assets/preview2.png" width="100%" />
 
 ---
 
-# 🧠 Learning Goals
+## 🧠 Learning Goals
 
 - Learn to use the GitHub API
 - Practice styling with Tailwind CSS
@@ -113,7 +110,7 @@ Click the **"Download PDF"** button to save the snapshot.
 
 ---
 
-# 🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
@@ -127,19 +124,26 @@ git commit -m "Add your message here"
 
 # Push and open a PR
 git push origin feature/your-feature-name
-🧑‍💻 Author
+```
+
+---
+
+## 🧑‍💻 Author
+
 Made with ❤️ by Hardik Devaliya
 
-📄 License
-This project is licensed under the MIT License.
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.  
 See the LICENSE file for details.
 
-📌 Tags
-react tailwindcss github-api vite axios responsive profile-card pdf-generator
+---
 
-yaml
-Copy
-Edit
+## 📌 Tags
+
+`react` `tailwindcss` `github-api` `vite` `axios` `responsive` `profile-card` `pdf-generator`
 
 ---
 
@@ -148,5 +152,3 @@ Edit
 1. Create a file named `README.md` in your project root (if it doesn’t exist).
 2. Copy and paste the above content into it.
 3. Commit and push it to GitHub.
-
-Let me know if you want the full README combined from your first post with this — I can deliver the enti
