@@ -2,7 +2,7 @@
 
 A sleek and responsive GitHub Profile Card app built with **React 19**, **Tailwind CSS 4**, **Axios**, and **Vite 6**. Search any GitHub user and view their public profile details in a beautifully styled UI. Bonus: Export the card as a PDF!
 
-![GitHub Card Screenshot](https://github.com/hardikdevaliya2006/Github_Card/src/assets/preview.png)
+![GitHub Card Screenshot](https://github.com/hardikdevaliya2006/Github_Card/blob/main/src/assets/preview.png)
 
 ---
 
@@ -95,8 +95,8 @@ Click the **"Download PDF"** button to save the snapshot.
 
 ## 📸 Screenshots
 
-<img src="https://github.com/hardikdevaliya2006/Github_Card/src/assets/preview1.png" width="100%" />
-<img src="https://github.com/hardikdevaliya2006/Github_Card/src/assets/preview2.png" width="100%" />
+<img src="https://github.com/hardikdevaliya2006/Github_Card/blob/main/src/assets/preview1.png" width="100%" />
+<img src="https://github.com/hardikdevaliya2006/Github_Card/blob/main/src/assets/preview2.png" width="100%" />
 
 ---
 
