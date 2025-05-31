@@ -8,7 +8,9 @@ A sleek and responsive GitHub Profile Card app built with **React 19**, **Tailwi
 
 ## 🚀 Live Demo
 
-👉 [Check it out here](https://githubprofilecardgenerator.vercel.app/)
+```bash
+https://githubprofilecardgenerator.vercel.app/
+```
 
 ---
 
