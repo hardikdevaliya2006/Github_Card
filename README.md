@@ -14,14 +14,14 @@ A sleek and responsive GitHub Profile Card app built with **React 19**, **Tailwi
 
 ## 📦 Tech Stack
 
-| Tech             | Description                            |
-|------------------|----------------------------------------|
-| React 19         | Frontend framework                     |
-| Tailwind CSS 4   | Styling and responsive layout          |
-| Axios            | Fetch data from GitHub API             |
-| Vite 6           | Fast build tool and dev server         |
-| React Router 7   | Client-side routing (optional)         |
-| html2canvas + jsPDF | Export card as PDF (bonus feature)  |
+| Tech                | Description                        |
+| ------------------- | ---------------------------------- |
+| React 19            | Frontend framework                 |
+| Tailwind CSS 4      | Styling and responsive layout      |
+| Axios               | Fetch data from GitHub API         |
+| Vite 6              | Fast build tool and dev server     |
+| React Router 7      | Client-side routing (optional)     |
+| html2canvas + jsPDF | Export card as PDF (bonus feature) |
 
 ---
 
@@ -56,11 +56,17 @@ npm run dev
 Github_Card/
 ├── public/
 ├── src/
+│   ├── assets/
+│   │   ├── preview1.png
+│   │   └── preview2.png
 │   ├── components/
 │   │   └── GitHubCard.jsx
-│   ├── assets/
 │   ├── App.jsx
 │   └── main.jsx
+├── .eslintrc.cjs
+├── index.html
+├── package.json
+├── postcss.config.js
 ├── tailwind.config.js
 ├── vite.config.js
 └── README.md
@@ -131,13 +137,6 @@ git push origin feature/your-feature-name
 ## 🧑‍💻 Author
 
 Made with ❤️ by Hardik Devaliya
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.  
-See the LICENSE file for details.
 
 ---
 
