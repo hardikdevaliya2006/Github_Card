@@ -1,6 +1,6 @@
 # 🌟 GitHub Profile Card – React App
 
-A sleek and responsive GitHub Profile Card app built with **React 19**, **Tailwind CSS 4**, **Axios**, and **Vite 6**. Search any GitHub user and view their public profile details in a beautifully styled UI. Bonus: Export the card as a PDF!
+A sleek and responsive GitHub Profile Card app built with **React 19**, **Tailwind CSS 4**, **Axios**, and **Vite 6**. Search any GitHub user and view their public profile details in a beautifully styled UI. Bonus: Export the card as a JPG!
 
 ![GitHub Card Screenshot](https://github.com/hardikdevaliya2006/Github_Card/blob/main/src/assets/preview.png)
 
