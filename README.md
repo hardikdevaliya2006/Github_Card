@@ -74,14 +74,6 @@ Using the GitHub REST API:
 GET https://api.github.com/users/{username}
 ```
 
-**Returns:**
-
-- `avatar_url`
-- `login`, `name`
-- `bio`, `location`
-- `followers`, `following`
-- `public_repos`, etc.
-
 ## 🖨️ Export to PDF
 
 This app uses `html2canvas` + `jsPDF` to let users download the GitHub card as a PDF.  
@@ -123,9 +115,3 @@ Made with ❤️ by Hardik Devaliya
 ## 📌 Tags
 
 `react` `tailwindcss` `github-api` `vite` `axios` `responsive` `profile-card` `pdf-generator`
-
-### ✅ To Use It:
-
-1. Create a file named `README.md` in your project root (if it doesn’t exist).
-2. Copy and paste the above content into it.
-3. Commit and push it to GitHub.
